@@ -1,1 +1,1 @@
-# nvim_config
+Read KEYMAPS.txt for keymap cheatsheet.
