@@ -1,0 +1,97 @@
+#TODO: 
+- Set keybinds for plugins like harpoon and neotree. Look through documentation to see 
+what options are available.
+- Customize config for neotree. Set keymap to toggle tree.
+
+
+
+                                        -- NVIM KEYMAP TRACKER --
+
+-- MODIFIER: <LEADER>
+
+    --MODE: <NORMAL>
+
+        -- TELESCOPE
+        <.>  = open file nav
+        <pf> = open telescope project files
+        <gf> = open telescope git files
+        <ps> = grep search for string
+        
+        -- HARPOON
+        <e>  = toggle harpoon gui
+        <a>  = add buffer to harpoon
+        <1>  = navigate to file 1
+        <2>  = navigate to file 2
+        <3>  = navigate to file 3
+
+        -- FUGITIVE
+        <gs> = open git menu
+
+        -- GENERAL
+        <f> = format selected text
+        <s> = replace/edit/modify current word accross the whole buffer
+        <x> = add user permission to execute in current repository
+        <y> = copy selection to system buffer
+        <p> =
+        <d> =
+        <k> =
+        <j> =
+
+
+    --MODE: <VISUAL>
+
+    --MODE: <INSERT>
+
+    --MODE: <COMMAND>
+
+
+
+-- MODIFIER: <CONTROL>
+
+    --MODE: <NORMAL>
+
+    --MODE: <VISUAL>
+
+    --MODE: <INSERT>
+
+    --MODE: <COMMAND>
+
+
+
+-- MODIFIER: <SHIFT>
+
+    --MODE: <NORMAL>
+
+    --MODE: <VISUAL>
+
+    --MODE: <INSERT>
+
+    --MODE: <COMMAND>
+
+
+
+-- MODIFIER: <NONE>
+
+    --MODE: <NORMAL>
+        <j> = cursor down
+        <k> = cursor up
+        <h> = cursor left
+        <l> = cursor right
+        <p> = paste
+
+    --MODE: <VISUAL>
+        <y> = yank (copy)
+        <p> = paste
+        <>
+
+
+    --MODE: <INSERT>
+
+    --MODE: <COMMAND>
+
+
+
+-- MISC:
+
+    --GLOBAL LUA FUNCTIONS (:lua <function>)
+        <SetColors()> = update colorscheme application for nvim
