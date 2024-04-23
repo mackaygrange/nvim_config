@@ -4,8 +4,7 @@ function ()
     vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
     vim.fn.sign_define("DiagnosticSignWarn", {text = " ", texthl = "DiagnosticSignWarn"})
     vim.fn.sign_define("DiagnosticSignInfo", {text = " ", texthl = "DiagnosticSignInfo"})
-    vim.fn.sign_define("DiagnosticSignHint",
-    {text = "󰌵", texthl = "DiagnosticSignHint"})
+    vim.fn.sign_define("DiagnosticSignHint", {text = "󰌵", texthl = "DiagnosticSignHint"})
  
     require("neo-tree").setup(
     {
@@ -14,7 +13,6 @@ function ()
             "filesystem",
             "buffers",
             "git_status",
-            -- "document_symbols",
         },
         source_selector = 
         {
@@ -28,7 +26,7 @@ function ()
                 { source = "buffers" },
                 { source = "git_status" },
             },
-            content_layout = "start", -- only with `tabs_layout` = "equal", "focus"
+            content_layout = "center", -- only with `tabs_layout` = "equal", "focus"
             --                start  : |/ 󰓩 bufname     \/...
             --                end    : |/     󰓩 bufname \/...
             --                center : |/   󰓩 bufname   \/...
