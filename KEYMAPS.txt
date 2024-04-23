@@ -91,5 +91,46 @@
 
 -- MISC:
 
+    --NEOTREE KEYBINDINGS
+
+        --GLOBAL
+        <A> = add directory 
+        <d> = delete
+        <r> = rename
+        <m> = move
+        <i> = show file details
+        <?> = show help
+        <q> = close window
+        <y> = copy to clipboard
+        <x> = cut to clipboard
+        <p> = paste from clipboard
+        
+        <<> = show previous source
+        <>> = show next source
+
+        <z> = close all nodes
+        <Z> = open all nodes
+        <R> = refresh
+
+        --FILESYSTEM
+
+        --BUFFERS
+
+        --GIT
+
+        
+        <> = 
+        <> = 
+        <> = 
+        <> = 
+        <> =
+        <> = 
+
+        <> = 
+        <> = 
+        <> =
+        <> = 
+
+
     --GLOBAL LUA FUNCTIONS (:lua <function>)
         <SetColors()> = update colorscheme application for nvim
