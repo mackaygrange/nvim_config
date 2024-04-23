@@ -27,7 +27,7 @@
         -- GENERAL
         <.> = open netrw
         <f> = format selected text
-        <s> = replace/edit/modify current word accross the whole buffer
+        <s> = replace/edit/modify current word across the whole buffer
         <x> = add user permission to execute in current repository
         <y> = copy selection to system buffer
         <p> =
@@ -99,7 +99,8 @@
         <r> = rename
         <m> = move
         <i> = show file details
-        <?> = show help
+        <?> = show help:w
+
         <q> = close window
         <y> = copy to clipboard
         <x> = cut to clipboard
