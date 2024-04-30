@@ -1,5 +1,5 @@
 -- Pull up file system with <leader>.
-vim.keymap.set("n", "<leader>.", vim.cmd.Ex) 
+vim.keymap.set("n", "<leader>.", vim.cmd.Ex)
 
 -- Allows movement of highlighted passages with <shift>j and <shift>k
 vim.keymap.set("v", "J", ":m'>+1 <CR> gv=gv")
@@ -48,4 +48,30 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 
 -- Neotree Keymaps
 vim.keymap.set("n", "<leader>t", ":Neotree action=show source=filesystem position=left toggle=true reveal=true<cr>", {silent = true})
+
+-- Run Current Python Script
+vim.api.nvim_set_keymap('n', '<F9>', ':w | !python %<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<F9>', '<Esc>:w | !python %<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<F9>', '<Esc>:w | !python %<cr>', {noremap = true, silent = true})
+
+-- Compile and Run C code with Makefile
+vim.api.nvim_set_keymap('n', '<F8>', ':w | !make &&' .. vim.fn.fnamemodify(vim.fn.expand('%:p:h'), ':t') .. '<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<F8>', ':w | !make &&' .. vim.fn.fnamemodify(vim.fn.expand('%:p:h'), ':t').. '<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<F8>', '<Esc>:w | !make &&' .. vim.fn.fnamemodify(vim.fn.expand('%:p:h'), ':t') .. '<cr>', {noremap = true, silent = true})
+
+-- Quick save file
+vim.api.nvim_set_keymap('n', '<leader>w', ':w<cr>', {noremap = true})
+vim.api.nvim_set_keymap('v', '<leader>w', '<Esc>:w<cr>', {noremap = true})
+
+-- Quick quit
+vim.api.nvim_set_keymap('n', '<leader>q', ':q<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<leader>q', ':q<cr>', {noremap = true, silent = true})
+
+-- Quick savequit
+vim.api.nvim_set_keymap('n', '<leader>wq', ':wq<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<leader>wq', '<Esc>:wq<cr>', {noremap = true, silent = true})
+
+-- Quick savequit all
+vim.api.nvim_set_keymap('n', '<leader>wqa', ':wqa<cr>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<leader>wqa', '<Esc>:wqa<cr>', {noremap = true, silent = true})
 
